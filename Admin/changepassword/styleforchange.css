@@ -1,0 +1,75 @@
+
+.change-container {
+    padding: 20px;
+    width: 600px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.43);
+    border-radius: 20px;
+    color: white;
+    height: fit-content;
+    padding-top: 40px;
+}
+input {
+    width: 50%;
+    float: right;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 40px;
+    margin: 0;
+}
+input[type='checkbox']
+{
+    width: 20px;
+    float: right;
+    margin: 0;
+    margin-right: 15px;
+}
+label
+{
+    margin-left: 55px;
+    width: 200px;
+}
+.passchange
+{
+    height: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.passchange:nth-child(1),
+.passchange:nth-child(3),
+.passchange:nth-child(5),
+.passchange:nth-child(8)
+{
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.submit-button {
+    width: 24%;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: medium;
+    border: 1px solid #000;
+
+}
+.changepassword
+{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+.change_footer
+{
+    margin-top: -20px;
+}

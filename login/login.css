@@ -1,0 +1,182 @@
+/*Body*/
+html{
+    height: 100%;
+}
+body {
+    background-image: url(../common/wallpaper/violet.png);
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all .5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    background-image: url(../common/wallpaper/violet.png); 
+    filter: blur(10px); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+.Main{
+    transition: all .5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.page
+{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/*Login Page*/
+
+
+.page .pbox{
+    position: absolute;
+    height: 400px;
+    width: 310px;
+    margin-bottom: 000px;
+    transition: transform .3s ease;
+}
+
+.show_pass_first{
+    position: absolute;
+    top: 25px;
+    left: 270px;
+    color: rgb(108, 108, 108);
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    
+}
+.hide_pass_first{
+    position: absolute;
+    top: 25px;
+    left: 270px;
+    color: rgb(108, 108, 108);
+    font-size: 0px;
+    transition: all .3s ease-in-out;
+}
+
+
+.pbox.show_it .show_pass_first{
+    font-size: 0px;
+}
+.pbox.show_it .hide_pass_first{
+    font-size: 20px;
+}
+
+.pbox h2{
+    text-align:center;
+    font-size: 40px;
+}
+.box{
+    position: relative;
+    width: 95%;
+    height: 50px;
+    border-bottom: 3px solid rgb(155, 155, 155);
+    margin: 20px;
+    margin-left: 5px;
+}
+.box input{
+    font-size: 15px;
+    color: rgb(108, 108, 108);
+    position: relative;
+    width: 270px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.button1{
+    border: none;
+    transition: transform .2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 9px;
+    background-color: aqua;
+    border-radius: 360px;
+    width: 300px;
+    height: 50px;
+    background-image: url(../common/wallpaper/violet.png);
+}
+.button1:hover
+{
+    transform: scale(1.1);
+}
+.button1:focus
+{
+    transform: scale(1);
+}
+.button1 h6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px;
+    text-align: center;
+    font-size:27px;
+    color: white;
+}
+.icon{
+    
+    color: rgb(108, 108, 108);
+    font-size: 19px;
+}
+.i{
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 30px;
+    width: 30px;
+}
+.inbox{
+    height: 30px;
+    width: 370px;
+}
+
+
+.back{
+    height: 30px;
+    width: 30px;
+}
+
+.pbox label{
+    left: 10px;
+    font-weight: 400px;
+    transform: translateY(-50%);
+    color: rgb(108, 108, 108);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
