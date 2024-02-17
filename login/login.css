@@ -1,0 +1,467 @@
+/*Body*/
+html{
+    height: 100%;
+}
+body {
+    background-image: url(../common/wallpaper/violet.png);
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all .5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    background-image: url(../common/wallpaper/violet.png); 
+    filter: blur(10px); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+.Main{
+    transition: all .5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.page
+{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/*Login Page*/
+
+
+.page .pbox{
+    position: absolute;
+    height: 400px;
+    width: 310px;
+    margin-bottom: 000px;
+    transition: transform .3s ease;
+}
+
+.show_pass_first{
+    position: absolute;
+    top: 25px;
+    left: 270px;
+    color: rgb(108, 108, 108);
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    
+}
+.hide_pass_first{
+    position: absolute;
+    top: 25px;
+    left: 270px;
+    color: rgb(108, 108, 108);
+    font-size: 0px;
+    transition: all .3s ease-in-out;
+}
+
+
+.pbox.show_it .show_pass_first{
+    font-size: 0px;
+}
+.pbox.show_it .hide_pass_first{
+    font-size: 20px;
+}
+
+.pbox h2,.pbox1 h2,.pbox2 h2{
+    text-align:center;
+    font-size: 40px;
+}
+.pbox4 h2
+{
+    text-align:center;
+    font-size: 30px;
+}
+.box,.box2{
+    position: relative;
+    width: 95%;
+    height: 50px;
+    border-bottom: 3px solid rgb(155, 155, 155);
+    margin: 20px;
+    margin-left: 5px;
+}
+.box input,.box2 input, .box4 input{
+    font-size: 15px;
+    color: rgb(108, 108, 108);
+    position: relative;
+    width: 270px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.button1{
+    border: none;
+    transition: transform .2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 56px;
+    margin-left: 9px;
+    background-color: aqua;
+    border-radius: 360px;
+    width: 300px;
+    height: 50px;
+    background-image: url(../common/wallpaper/violet.png);
+}
+.button1:hover
+{
+    transform: scale(1.1);
+}
+.button1:focus
+{
+    transform: scale(1);
+}
+.button1 h6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px;
+    text-align: center;
+    font-size:27px;
+    color: white;
+}
+.icon{
+    
+    color: rgb(108, 108, 108);
+    font-size: 19px;
+}
+.i{
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 30px;
+    width: 30px;
+}
+.inbox{
+    height: 30px;
+    width: 370px;
+}
+
+
+.back{
+    height: 30px;
+    width: 30px;
+}
+
+.pbox label,
+.pbox1 label,
+.pbox2 label,
+.pbox3 label,
+.pbox4 label
+{
+    left: 10px;
+    font-weight: 400px;
+    transform: translateY(-50%);
+    color: rgb(108, 108, 108);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.forgot-div
+{
+    height: 20px;
+    margin-top: 2px;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.forgot-div > a:hover
+{
+text-decoration: underline;
+cursor: pointer;
+}
+.page2
+{
+    position: relative;
+    height: 250px;
+    width: 400px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+.page2 .pbox1{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 000px;
+    transition: transform .3s ease;
+}
+.button2{
+    border: none;
+    transition: transform .2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 9px;
+    background-color: aqua;
+    border-radius: 360px;
+    width: 140px;
+    height: 40px;
+    background-image: url(../common/wallpaper/violet.png);
+}
+.button2:hover
+{
+    transform: scale(1.1);
+}
+.button2:focus
+{
+    transform: scale(1);
+}
+.button2 h6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size:15px;
+    color: white;
+}
+.box2
+{
+    margin: 0;
+}
+
+
+.pbox3
+{
+    transform: translateX(0);
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.page2.active
+{
+    height: 330px;
+}
+.page2.active .pbox3
+{
+    transform: translateX(-500px);
+    position: absolute;
+}
+.box3 input, .box3 input{
+    font-size: 15px;
+    color: rgb(108, 108, 108);
+    width: 270px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.box3,.box4{
+    width: 95%;
+    height: 50px;
+    margin-top: 14px;
+    border-bottom: 3px solid rgb(155, 155, 155);
+}
+.button3{
+    border: none;
+    transition: transform .2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 0px;
+    margin-left: 9px;
+    background-color: aqua;
+    border-radius: 360px;
+    width: 140px;
+    height: 40px;
+    background-image: url(../common/wallpaper/violet.png);
+}
+.button3:hover
+{
+    transform: scale(1.1);
+}
+.button3:focus
+{
+    transform: scale(1);
+}
+.button3 h6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size:15px;
+    color: white;
+}
+.pbox3 h2{
+    text-align:center;
+    font-size: 40px;
+}
+.pbox4
+{
+    transform: translateX(500px);
+    position: absolute;
+}
+.page2.active .pbox4
+{
+    transform: translateX(0px);
+    height: 90%;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all .4s ease-in-out;
+}
+.pbox4 > form
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.thefulldivsend.active
+{
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  backdrop-filter: blur(5px);
+}
+.loading > h2{
+    display: none;
+}
+.thefulldivsend.active .loading > h2
+{
+  display: block;
+  color: white;
+  position: absolute;
+  background-color: #0000003b;
+  width: 100%;
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
+
+}
+.thefulldivsend.active .loading
+{
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  background-color: #0000006d;
+  position: absolute;
+  top: 33%;
+  left: 42%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thefulldivsend.active .loading > .bar1
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-bottom: 6px solid rgb(0, 183, 255);
+  animation: autonew 1s linear infinite;
+}
+.thefulldivsend.active .loading > .bar2
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+  width: 45%;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-left: 6px solid rgb(0, 255, 0);
+  animation: autowheel 1s linear infinite;
+}
+.thefulldivsend.active .loading > .bar3
+{
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-right: 6px solid red;
+  animation: auto3 1s linear infinite;
+}
+
+
+@keyframes autonew
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%
+    {
+      transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes autowheel
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes auto3
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

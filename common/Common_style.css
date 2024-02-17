@@ -1,0 +1,1083 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background-image: url(wallpaper/violet.png);
+  background-size: cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+
+}
+*::-webkit-scrollbar
+{
+  display: none;
+}
+body::before {
+  content: "";
+  background-image: inherit;
+  filter: blur(50px); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.top-bar {
+  background-color: rgb(8, 46, 128);;
+  color: #fff;
+  padding: 10px;
+  height: 5%;
+  border-bottom: 2px solid rgb(180, 180, 180) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.top-bar > button
+{
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+}
+.top-bar >img
+{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.side-menu {
+  width: 18%;
+  background-color: #3951a7c4;
+  color: #fff;
+  height: 92%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  float: left;
+  margin-right: 0;
+}
+
+
+
+.main-content {
+  padding: 10px;
+  float: left;
+  padding-top: 0;
+  height: 100%;
+  width: 100%;
+  
+}
+.main-body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.side-menu li {
+  margin-left: 8px;
+  margin-bottom: 0px;
+}
+.side-menu   .sub_tree > li {
+  margin-left: 8px;
+  margin-top: 20px;
+}
+
+.side-menu > ul 
+{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+.side-menu > ul > .head
+{
+  color: #ffffff;
+  background: #203683;
+  height: 10%;
+  width: 100%;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.side-menu > ul > .option
+{
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  margin-left: 10px;
+  font-size: 18;
+  display: flex;
+  background-color: #ffffff;
+  margin-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: black;
+}
+.option > span
+{
+  margin-left: 20px;
+  cursor: pointer;
+}
+.option  a
+{
+  color: black !important;
+  height: 65px !important;
+}
+
+.icon.active .down
+{
+  transform: translateY(-3px);
+  rotate: -180deg;
+}
+.icon .down
+{
+  rotate: -90deg;
+  transform: translateX(-3px);
+  transition: all .2s ease-in-out;
+}
+
+
+.sub_tree > li > a
+{
+  text-decoration: none;
+  color: #ffffff;
+}
+.sub_tree.active
+{
+  display: flex;
+  opacity: 1;
+  flex-direction: column;
+}
+.sub_tree
+{
+  opacity: 0;
+  display: none;
+  transition: all .3s ease-in-out;
+}
+.side-menu > ul > li >a
+{
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+
+.Bashboard > .data1 > .employee_att > .att_sub_div1 > table ,
+.Employees > .data2 > .employee_detail > table,
+.Designation > .des_data > .des_detail > table,
+.calendar > .cal_data > .cal_detail > table,
+.Attendance > .Daily_att > .Daily_att_sub > table,
+.Attendance_M > .Monthly_att > .Monthly_att_sub > table,
+.Payrolls > .payrolls_details > .payrolls_details_sub > table,
+.per_att_table > table,
+.EMP_HOME > .data1 > .employee_att > .att_sub_div1 > table,
+.perAttendance_M > .Monthly_att >.Monthly_att_sub > table,
+.per_Payrolls > .payrolls_details > .payrolls_details_sub > table,
+.holidays > .holi_data > .holi_detail > table,
+.noti_body >table,
+.newbody >table,
+.in2 > table
+{
+
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+}
+.per_att_table > table
+{
+  background-color: transparent;
+}
+
+.per_att_table > table > thead
+{
+  color: white !important;
+}
+.Bashboard > .data1 > .employee_att > .att_sub_div1 > table > thead,
+.Employees > .data2 > .employee_detail > table >thead,
+.Designation > .des_data > .des_detail > table > thead,
+.calendar > .cal_data > .cal_detail > table >thead,
+.Attendance > .Daily_att > .Daily_att_sub > table > thead,
+.Attendance_M > .Monthly_att > .Monthly_att_sub > table >thead,
+.Payrolls > .payrolls_details > .payrolls_details_sub > table >thead,
+.per_att_table > table > thead,
+.EMP_HOME > .data1 > .employee_att > .att_sub_div1 > table > thead,
+.perAttendance_M > .Monthly_att >.Monthly_att_sub > table > thead,
+.per_Payrolls > .payrolls_details > .payrolls_details_sub > table > thead,
+.holidays > .holi_data > .holi_detail > table > thead,
+.noti_body >table > thead,
+.newbody >table>thead,
+.in2 > table > thead
+{
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333;
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  border-spacing: 0;
+}
+.perAttendance_M > .Monthly_att >.Monthly_att_sub > table > thead,
+.per_Payrolls > .payrolls_details > .payrolls_details_sub > table > thead
+{
+  background-color: transparent;
+}
+.per_att_table > table > thead
+{
+  height: 40px;
+}
+
+.Bashboard > .data1 > .employee_att > .att_sub_div1 > table > tbody,
+.Employees > .data2 > .employee_detail > table >tbody,
+.Designation > .des_data > .des_detail > table > tbody,
+.calendar > .cal_data > .cal_detail > table > tbody,
+.Attendance > .Daily_att > .Daily_att_sub > table > tbody,
+.Attendance_M > .Monthly_att > .Monthly_att_sub > table >tbody,
+.Payrolls > .payrolls_details > .payrolls_details_sub > table > tbody,
+.EMP_HOME > .data1 > .employee_att > .att_sub_div1 > table > tbody,
+.perAttendance_M > .Monthly_att >.Monthly_att_sub > table > tbody,
+.per_Payrolls > .payrolls_details > .payrolls_details_sub > table > tbody,
+.holidays > .holi_data > .holi_detail > table > tbody,
+.noti_body >table > tbody,
+.newbody >table > tbody,
+.in2 > table > tbody
+{
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+.calendar > .cal_data > .cal_detail > table
+{
+  height: fit-content;
+}
+.calendar > .cal_data > .cal_detail > table > tbody > tr > td
+{
+  border: 5px solid white;
+  width: 10%;
+  font-size: 45px;
+}
+.calendar > .cal_data > .cal_detail > table > tbody > tr
+{
+  height: 170px !important;
+}
+.calendar > .cal_data > .cal_detail > table > tbody > tr > td > div
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Bashboard > .data1 > .employee_att > .att_sub_div1 > table > tbody > tr,
+.Employees > .data2 > .employee_detail > table >tbody >tr,
+.Designation > .des_data > .des_detail > table > tbody > tr,
+.calendar > .cal_data > .cal_detail > table > tbody > tr,
+.Attendance > .Daily_att > .Daily_att_sub > table > tbody > tr,
+.Attendance_M > .Monthly_att > .Monthly_att_sub > table >tbody >tr,
+.Payrolls > .payrolls_details > .payrolls_details_sub > table > tbody >tr,
+.EMP_HOME > .data1 > .employee_att > .att_sub_div1 > table > tbody > tr,
+.perAttendance_M > .Monthly_att >.Monthly_att_sub > table > tbody > tr,
+.per_Payrolls > .payrolls_details > .payrolls_details_sub > table > tbody >tr,
+.holidays > .holi_data > .holi_detail > table > tbody > tr,
+.noti_body >table > tbody > tr,
+.newbody >table > tbody > tr,
+.in2 > table > tbody > tr
+{
+  background-color: rgb(252, 252, 252);
+  height: 60px;
+  font-size: 15px;
+}
+.noti_body >table > tbody > tr
+{
+  height: fit-content;
+  color: rgb(0, 0, 0);
+}
+.Bashboard > .data1 > .employee_att > .att_sub_div1 > table > tbody > tr:nth-child(odd),
+.Employees > .data2 > .employee_detail > table >tbody >tr:nth-child(odd),
+.Designation > .des_data > .des_detail > table > tbody > tr:nth-child(odd),
+.Attendance > .Daily_att > .Daily_att_sub > table > tbody > tr:nth-child(even),
+.Attendance_M > .Monthly_att > .Monthly_att_sub > table >tbody>tr:nth-child(odd),
+.Payrolls > .payrolls_details > .payrolls_details_sub > table > tbody >tr:nth-child(odd),
+.EMP_HOME > .data1 > .employee_att > .att_sub_div1 > table > tbody > tr:nth-child(odd),
+.perAttendance_M > .Monthly_att >.Monthly_att_sub > table > tbody > tr:nth-child(odd),
+.per_Payrolls > .payrolls_details > .payrolls_details_sub > table > tbody >tr:nth-child(odd),
+.holidays > .holi_data > .holi_detail > table > tbody > tr:nth-child(odd),
+.noti_body >table > tbody > tr:nth-child(odd),
+.newbody >table > tbody > tr:nth-child(odd),
+.in2 > table > tbody > tr:nth-child(odd)
+{
+  background-color: rgba(222, 222, 222, 0.923);
+}
+.noti_body >table > tbody > tr:nth-child(odd)
+{
+  background-color: rgba(188, 188, 188, 0.596);
+}
+.newtable:nth-child(odd)
+{
+  color: rgb(53, 53, 53);
+}
+.calendar > .cal_data > .cal_detail > table > tbody > tr
+{
+  background-color: rgb(174, 205, 157)
+}
+.thebuttons
+{
+  border: 2px solid white; 
+  border-radius: 5px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  cursor:pointer;
+}
+.thebuttons:hover
+{
+  transform: scale(1.1);
+}
+.newtable
+{
+  color: rgb(0, 0, 0);
+  height: 30px;
+}
+.Attendance_M > .head > form,
+.Attendance > .head > form,
+.Payrolls > .head > form,
+.Employees > .head > form,
+.Designation > .head > form,
+.calendar > .head > form,
+.EMP_HOME > .head > form,
+.perAttendance_M > .head > form,
+.per_Payrolls > .head > form,
+.holidays > .head > form,
+.pay_details_sub > .payroll_head >div>form,
+.bonus> .subhead > form
+{
+  height: 100%;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.main_form > .emp_details > .form_div > input,
+.main_form > .emp_details > .form_div > select,
+.main_form > .designation_add >.form_div> select,
+.main_form > .designation_add >.form_div> input,
+.main_form >.desc_details >.form_div > input,
+.main_form >.cal_details >.form_div > select,
+.main_form >.cal_details >.form_div > input,
+.Attendance_M > .head > form > input,
+.Attendance > .head > form > input,
+.Payrolls > .head > form > input,
+.Employees > .head > form > input,
+.Designation > .head > form > input,
+.calendar > .head > form > input,
+.EMP_HOME > .head > form > input,
+.perAttendance_M > .head > form > select,
+.per_Payrolls > .head > form > select,
+.holidays > .head > form > input,
+.pay_details_sub > .payroll_head >div>form >input,
+.bonus> .subhead > form > select,
+.in1 > .form_div > input
+{
+  box-sizing: border-box;
+  font: inherit;
+  font-family: inherit;
+  display: block;
+  width: 50%;
+  float: left;
+  height: 25px;
+  font-size: 14px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  color: #333;
+  border-color: #d2d6de;
+  text-align: center;
+
+}
+.Attendance_M > .head > form > input,
+.Attendance > .head > form > input,
+.Payrolls > .head > form > input,
+.Employees > .head > form > input,
+.Designation > .head > form > input,
+.calendar > .head > form > input,
+.perAttendance_M > .head > select,
+.EMP_HOME > .head > form > input,
+.perAttendance_M > .head > form > select,
+.per_Payrolls > .head > form > select,
+.holidays > .head > form > input,
+.pay_details_sub > .payroll_head >div>form >input,
+.bonus> .subhead > form > select
+{
+  width: 200px;
+  height: 30px;
+  margin-right: 5px;
+}
+.bonus> .subhead > form > select,
+.bonus> .subhead > form
+{
+  margin: 0;
+}
+
+.Bashboard > .head, 
+.Employees > .head,
+.Designation > .head,
+.calendar > .head,
+.Attendance > .head,
+.Attendance_M > .head,
+.Payrolls > .head,
+.EMP_HOME > .head,
+.perAttendance_M > .head,
+.per_Payrolls > .head,
+.holidays > .head
+{
+  height: 60px;
+  width: 84%;
+  background-color: rgba(255, 255, 255, 0.852);
+  border-bottom: 2px solid black ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.Employees > .head > a> button,
+.Bashboard > .head > a> button,
+.Designation > .head > a> button,
+.calendar > .head > a> button,
+.Attendance_M > .head > a >button,
+.Payrolls > .head > div > a > button,
+.Attendance > .head > a >button,
+.holidays > .head > a> button,
+.calendar > .cal_data > .cal_detail > table > tbody > tr > td > div >a> button,
+.bonus> .head > div>a> button
+{
+  background-color: #3c8dbc;
+  margin-left: 20px;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  border-color: #367fa9;
+  transition: all 0.3s ease;
+}
+.Employees > .head > a > button:hover,
+.Bashboard > .head > a > button:hover,
+.Designation > .head > a > button:hover,
+.calendar > .head > a > button:hover,
+.Attendance_M > .head > a > button:hover,
+.Payrolls > .head > div > a > button:hover,
+.Attendance > .head > a > button:hover,
+.bonus> .head > div>a> button:hover,
+.holidays > .head > a > button:hover{
+  transform: scale(1.1);
+  background-color: #2c6998; 
+}
+.Employees > .head > a > button:focus,
+.Bashboard > .head > a > button:focus,
+.Designation > .head > a > button:focus,
+.calendar > .head > a > button:focus,
+.Attendance_M > .head > a > button:focus,
+.Payrolls > .head > div > a > button:focus,
+.Attendance > .head > a > button:focus,
+.bonus> .head > div>a> button:focus,
+.holidays > .head > a > button:focus {
+  transform: scale(1);
+}
+
+
+.calendar > .cal_data > .cal_detail > table > tbody > tr > td > div >a> button
+{
+  width: 100%;
+  margin: 0;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+.update_empin
+{
+  background-color: transparent;
+  width: 100%;
+  height: 92%;
+  text-align: center;
+  border-radius: 20px;
+  transition: all .3s ease-in;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.update_empin > .update_form
+{
+  height: 98%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.update_empin > .update_form > .emp_details_view
+{
+  height: fit-content;
+  width: 90%;
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.43);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.theprofile
+{
+  overflow: hidden;
+}
+.theprofile h6
+{
+  animation: profileh6 1s ease-in-out 1;
+  animation-delay: .1s;
+}
+@keyframes profileh6 {
+  0%{
+    transform: scaleY(0);
+  }
+  50%{
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+ .profile
+{
+  height: 530px;
+  border-radius: 20px;
+  background-color: white;
+  width: 230px;
+  margin-left: 60px;
+  transform: translateX(0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+  border-bottom: 5px solid black;
+  animation: profileload .8s ease-in-out 1;
+}
+@keyframes profileload {
+  0%{
+    opacity: 0;
+      transform: translateX(-700px);
+  }
+  100% {
+    opacity: 1;
+      transform: translateX(0px); 
+  }
+}
+.profile > h2
+{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+}
+.profile > img
+{
+  height: 170px;
+  width: 170px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+.profile > .id_show
+{
+  background-color: #89CCFC;
+  width: 120px;
+  color: white;
+  height: 30px;
+  margin-top: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px #000000;
+
+}
+.profile > .Desc_show
+{
+  background-color: #EDD0D0;
+  width: 200px;
+  color: rgb(0, 0, 0);
+  height: 40px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px #000000;
+}
+.profile > .Desc_show > h4
+{
+font-size: 9px;
+margin-bottom: 0;
+margin-top: 0;
+}
+.emp_details_view>.header_view 
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emp_details_view>.header_view > h1
+{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.327);
+  height: 40px;
+  width: 400px;
+  border-radius: 20px;
+  animation: headingdown .8s ease-in-out 1;
+}
+@keyframes headingdown {
+  0%{
+    opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+      transform: translateY(0px);
+  }
+}
+ .data_edit
+{
+  height: 560px;
+  border-radius: 20px;
+  width: 700px;
+  margin-left: 30px;
+  float: left;
+  display: flex;
+  transform: translateX(0);
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  animation: editprofile .8s ease-in-out 1;
+}
+@keyframes editprofile {
+  0%{
+    opacity: 0;
+      transform: translateX(700px);
+  }
+  100% {
+    opacity: 1;
+      transform: translateX(0px);
+  }
+}
+.data_edit > .data_1,
+.data_edit > .data_2
+{
+  width: 650px;
+  margin-top: 0;
+  height: 220px;
+  background-color: rgba(130, 130, 130, 0.696);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.data_edit > .data_2
+{
+  height: 280px;
+}
+.pay_details > .pay_details_sub > .main_pay
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.emp_details_view > .header_view > a,
+.pay_details > .pay_details_sub > .main_pay > a
+{
+  text-decoration: none;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .data_edit > .data_1 > h3,
+.data_edit > .data_2 > h3
+{
+  margin-left: 10px;
+  margin-top: 6px;
+  color: white;
+}
+.Buttons_bar
+{
+  height: 30px;
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+.Buttons_bar >a> button 
+{
+  height: 30px;
+  width: 100px;
+  margin-top: -5;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all .1s ease-in-out;
+}
+.Buttons_bar >a
+{
+  animation: buttonAnimation 1s ease-in-out;
+}
+.Buttons_bar > a:nth-child(1) { animation-delay: 0s; }
+.Buttons_bar > a:nth-child(2) { animation-delay: 0.1s; }
+.Buttons_bar > a:nth-child(3) { animation-delay: 0.2s; }
+.Buttons_bar > a:nth-child(4) { animation-delay: 0.3s; }
+@keyframes buttonAnimation {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.Buttons_bar >a> button:hover
+{
+  transform: translateY(-2px);
+}
+.Buttons_bar >a> button:active
+{
+  transform: translateY(2px);
+}
+
+.data_edit > .data_1 > .bar_le,
+.data_edit > .data_2 > .bar_le,
+.data_edit > .data_1 > .sub_div
+{
+  float: left;
+  box-shadow: 3px 3px 5px #000000;
+  background-color: white;
+  height: 50px;
+  width: 600px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.data_edit > .data_1 > .sub_div
+{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  box-shadow: none;
+}
+.data_edit > .data_1 > .bar_le > label,
+.data_edit > .data_2 > .bar_le > label,
+.data_edit > .data_1  > .sub_div > .DOB > label,
+.data_edit > .data_1  > .sub_div > .Gender > label
+{
+  float: left;
+  margin-left: 20px;
+  margin-top: 4px;
+  font-size: 14px;
+  width: auto;
+}
+.data_edit > .data_1 > .bar_le > h6,
+.data_edit > .data_2 > .bar_le > h6,
+.data_edit > .data_1  > .sub_div > .DOB > h6,
+.data_edit > .data_1  > .sub_div > .Gender > h6
+{
+  height: 100%;
+  width: 100%;
+  text-align: start;
+  font-size: 25px;
+  margin-top: -3px;
+  margin-left: 40px;
+}
+
+
+
+
+.data_edit > .data_1 > .sub_div > .DOB,
+.data_edit > .data_1 > .sub_div > .Gender
+{
+  box-shadow: 3px 3px 5px #000000;
+  background-color: white;
+  height: 50px;
+  width: 280px;
+  float: left;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.pay_details
+{
+  height: 90%;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.pay_details > .pay_details_sub
+{
+  background-color: #0000004d;
+  color: white;
+  height: 600px;
+  width: 90%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid white;
+}
+.pay_details_sub > .payroll_head
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 70px;
+  width: 100%;
+  border-bottom: 4px solid white;
+  border-top: 4px solid white;
+  color: white;
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+.pay_details_sub > .payroll_head >div
+{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.pay_details_sub > .payroll_scale01
+{
+  height: 120px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.915);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.pay_details_sub > .payroll_scale01 > h1,
+.pay_details_sub > .payroll_salarydet > h1
+{
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.pay_details_sub > .payroll_scale01 > table,
+.pay_details_sub > .payroll_salarydet > table
+{
+  width: 98%;
+  text-align: center;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  font-size: 20px;
+  font-weight: 300;
+}
+.pay_details_sub > .payroll_scale02
+{
+  height: 120px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.915);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.pay_details_sub > .payroll_scale02 > div
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+.pay_details_sub > .payroll_scale02 > div:first-child
+{
+  border-right: 5px solid black;
+}
+.pay_details_sub > .payroll_scale02 > div > table
+{
+  margin-left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  font-weight: 600;
+  border-collapse: collapse;
+}
+.pay_details_sub > .payroll_scale02 > div > table tr
+{
+  margin-top: 50px;
+}
+.pay_details_sub > .payroll_scale02 > div > table tr p
+{
+  margin-left: 40px;
+}
+.pay_details_sub > .payroll_scale02 > div > table tr:nth-child(even)
+{
+  background-color: #dadada;
+}
+
+.pay_details_sub > .payroll_salarydet
+{
+  height: 150px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.915);
+  margin-bottom: 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+
+
+
+.change-container {
+  padding: 20px;
+  width: 600px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.43);
+  border-radius: 20px;
+  color: white;
+  height: fit-content;
+  padding-top: 40px;
+  
+}
+input {
+  width: 50%;
+  float: right;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 40px;
+  margin: 0;
+}
+input[type='checkbox']
+{
+  width: 20px;
+  float: right;
+  margin: 0;
+  margin-right: 15px;
+}
+label
+{
+  margin-left: 55px;
+  width: 200px;
+  width: fit-content;
+}
+.passchange
+{
+  height: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.passchange:nth-child(1),
+.passchange:nth-child(3),
+.passchange:nth-child(5),
+.passchange:nth-child(8)
+{
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.submit-button {
+  width: 24%;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: medium;
+  border: 1px solid #000;
+
+}
+.changepassword
+{
+  height: 92%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+.change_footer
+{
+  margin-top: -20px;
+}
+.change-container > form
+{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.newuser
+{
+  border: none;
+  outline: none;
+}

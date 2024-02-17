@@ -1,0 +1,469 @@
+
+
+.EMP_HOME,
+.perAttendance_M,
+.per_profile_details,
+.per_Payrolls,
+.calendar
+{
+  background-color: transparent;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 92%;
+}
+.EMP_HOME
+{
+  overflow: hidden;
+}
+.calendar
+{
+  background-color: rgba(0, 0, 0, 0.122);
+
+}
+.per_profile_details
+{
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar > .cal_data
+{
+  margin-top: 65px;
+}
+
+.EMP_HOME > .data1
+{
+  width: 100%;
+  height: 100%;
+  margin-top: 64px;
+
+}
+.EMP_HOME > .data1 >.sample_data
+{
+  position: fixed;
+  width: 14%;
+  height: 100%;
+  margin-left: 7px;
+  float: left;
+  overflow: hidden;
+}
+
+.EMP_HOME > .data1 >.sample_data > .box
+{
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+  width: 95%;
+  height: 18%;
+  background-color: slategrey;
+  margin-top: 18px;
+  animation: boxload .9s ease-in-out 1;
+}
+.EMP_HOME > .data1 >.sample_data > .box:nth-child(4){animation-delay: -0.35s;}
+.EMP_HOME > .data1 >.sample_data > .box:nth-child(3){animation-delay: -0.25s;}
+.EMP_HOME > .data1 >.sample_data > .box:nth-child(2){animation-delay: -0.15s;}
+.EMP_HOME > .data1 >.sample_data > .box:nth-child(1){animation-delay: -0.05s;}
+@keyframes boxload {
+  0% {
+    opacity: 0;
+      transform: translateX(-250px);
+  }
+  50% {
+    opacity: 0;
+      transform: translateX(-250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.EMP_HOME > .data1 >.sample_data > .box > .bodypart
+{
+  color: white;
+  font-size: 14px;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.EMP_HOME > .data1 >.sample_data > .box > .bodypart > h3
+{
+  font-size: 30px;
+  margin: 0;
+}
+.EMP_HOME > .data1 >.sample_data > .box > .footerpart
+{
+  background-color: rgba(0,0,0,0.1);
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.EMP_HOME > .data1 >.sample_data > .box > .footerpart > a{
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.EMP_HOME > .data1 > .employee_att,
+.perAttendance_M > .Monthly_att
+{
+  width: 80%;
+  padding-right: 0;
+  height: 98%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 18%;
+}
+.perAttendance_M > .Monthly_att
+{
+  margin-left: 0px;
+  width: 100%;
+  margin-top: 64px;
+}
+.EMP_HOME > .data1 > .employee_att > .att_header
+{
+  height: 7%;
+  margin-top: 20px;
+  width: 100%;
+  border-bottom: 3px solid rgba(73, 76, 86, 0.462) ;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+}
+.EMP_HOME > .data1 > .employee_att > .att_header >h3
+{
+  box-sizing: border-box;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.586);
+  font-family: 'Source Sans Pro',sans-serif;
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-left: 10px;
+  line-height: 1;
+
+}
+.EMP_HOME > .data1 > .employee_att > .att_sub_div1,
+.perAttendance_M > .Monthly_att >.Monthly_att_sub
+{
+  height: 100%;
+  width: 100%;
+  margin-left: 5px;
+}
+.EMP_HOME > .data1 > .employee_att > .att_sub_div1
+{
+  overflow-y: auto;
+  height: 55%;
+}
+
+.per_profile_details > .update_form
+{
+  height: 98%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.per_profile_details > .update_form > .emp_details_view
+{
+  height: fit-content;
+  width: 90%;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.43);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.emp_details_view>.header_view 
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.emp_details_view>.header_view > h1
+{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.327);
+  height: 40px;
+  width: 400px;
+  text-align: center;
+  border-radius: 20px;
+}
+.payrolls_details_sub > table
+{
+  margin-top: 64px;
+}
+
+
+
+
+.edit_div
+{
+  width: 100%;
+  height: 97%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit_div > .data{
+  height: 350px;
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+}
+.edit_div > .data > form > h2
+{
+  text-align: center;
+}
+
+
+.edit_table
+{
+  height: 80%;
+  width: 100%;
+  border-collapse: collapse ;
+
+}
+.edit_table label
+{
+  margin-left: 0;
+}
+
+.edit_table input, .edit_table select
+{
+  box-sizing: border-box;
+  font: inherit;
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  float: left;
+  height: 25px;
+  font-size: 14px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  color: #333;
+  border-color: #d2d6de;
+  text-align: center;
+
+}
+.edit_table tr td
+{
+  width: 50%;
+}
+
+.Edit_footer
+{
+  width: 50%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Edit_footer button
+{
+  height: 30px;
+  width: 90px;
+  border-radius: 10px;
+  background-color: #3c8dbc;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.footer_tr
+{
+  height: 40px;
+}
+
+
+.bar_main
+{
+  height: 55%;
+  width: 100%;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  transition: all .2s ease-in-out;
+}
+.bar_top
+{
+  width: 100%;
+  height: 80%;
+  background-color: rgb(167, 167, 167);
+  display: flex;
+  flex-direction: row;
+}
+.bar_bottom
+{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+}
+.bar11,.bar21
+{
+  background: rgb(214, 214, 214);
+  height: 100%;
+  width: 8%;
+}
+.bar12,.bar22
+{
+  background-color:transparent;
+  height: 100%;
+  width: 92%;
+}
+.bar12
+{
+  border-bottom: 5px solid white ;
+  border-left: 5px solid white ;
+  box-sizing: border-box;
+  border-bottom-left-radius: 3px;
+  z-index: 5;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.bar22
+{
+  background: rgb(214, 214, 214);
+}
+.bar22 > table,.bar12 >table
+{
+  height: 100%;
+  width: 99%;
+  text-align: center;
+}
+.bar22 > table
+{
+  margin-left: 4px;
+  border-collapse: collapse;
+  width: 98.6%;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.thebarmain
+{
+  height:100%;
+  width:100%;
+  display: flex;
+  align-items: end;
+  flex-direction: column-reverse;
+  background-color: rgb(145, 145, 145);
+}
+.thebarmain > div
+{
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.bar11 >table
+{
+  height: 97.6%;
+  width: 100%;
+  text-align: end;
+  margin-bottom: 0px;
+  border-collapse: collapse;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.marg
+{
+  height: 40%;
+  width: 70%;
+  position: fixed;
+  background-color: #333;
+  z-index: 1;
+}
+
+.commonbar
+{
+  height: 0%;
+  border: 1px solid white;
+  width:100%;
+  box-shadow: 5px 8px 25px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease-in-out;
+  flex-direction: column;
+}
+.commonbar > h3
+{
+  font-size: 8px;
+  opacity: 0;
+  cursor: default;
+  transition: all .2s ease-in-out;
+  color: white;
+}
+.commonbar:hover > h3{
+  color: black;
+  font-size: 20px;
+  opacity: 1;
+}
+.commonbar:hover
+{
+  transform: scale(1.3);
+  z-index: 4;
+}
+.barblur
+{
+  height: 237px;
+  width: 940px;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  transition: all .2s ease-in-out;
+}
+.bat_title
+{
+  height: 30px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.infobar
+{
+  height: 100%; 
+  width: 20%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
+.infobar > div
+{
+  height:15px; 
+  border:2px solid black; 
+  border-radius: 2px; 
+  width: 15px; 
+  margin-top: -4px;
+  box-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+.infobar > h3
+{
+  font-size:13px;
+}
